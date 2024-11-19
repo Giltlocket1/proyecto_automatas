@@ -1,0 +1,74 @@
+/* Fondo oscuro con animación */
+body {
+    background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+    color: #ffffff;
+}
+
+/* Título principal con efecto de neón */
+.main-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0fd9d9;
+    text-shadow: 0 0 10px #0fd9d9, 0 0 20px #0fd9d9, 0 0 30px #0fd9d9;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #8e8e8e;
+    font-style: italic;
+}
+
+/* Animación del brillo en neón */
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px #0fd9d9, 0 0 10px #0fd9d9;
+    }
+    to {
+        text-shadow: 0 0 20px #0fd9d9, 0 0 30px #0fd9d9;
+    }
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+}
+.bg-js {
+    background-color: #007bff; /* Azul para JS */
+}
+.bg-php {
+    background-color: #28a745; /* Verde para PHP */
+}
+
+/* Botones con efecto de neón */
+.btn-outline-neon {
+    color: #0fd9d9;
+    border-color: #0fd9d9;
+    background-color: transparent;
+    text-shadow: 0 0 5px #0fd9d9;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-neon:hover {
+    color: #fff;
+    background-color: #0fd9d9;
+    box-shadow: 0px 0px 15px #0fd9d9;
+}
+
+/* Contorno en neón para el área de texto */
+textarea {
+    resize: none;
+    border: 3px solid;
+    border-image: linear-gradient(135deg, #ff4e50, #f9d423, #24c6dc) 1;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Efecto de neón en el foco del textarea */
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #0fd9d9;
+}
